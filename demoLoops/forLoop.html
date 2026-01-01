@@ -6,12 +6,44 @@
     <title>JavaScript Loops</title>
   </head>
   <body>
-    <h1>JavaScript For Loop</h1>
+    <h1>For Loop</h1>
 
     <script>
-      // Declare 'i' inside the loop with 'let'
-      // Use curly braces {} even for single lines
-      for (let i = 0; i < 5; i++) {
+      /*  //Declare 'i' inside the loop with 'let' and Use curly braces{} even for single lines
+
+        for (let i = 0; i < 5; i++) {
+          console.log(i);
+        } */
+
+      /*         // Example no. 1
+        const cartPrices = [19.99, 5.5, 10.0, 2.99];
+        let total = 0;
+
+        // The loop runs exactly as many times as there are items in the array
+        for (let i = 0; i < cartPrices.length; i++) {
+          total += cartPrices[i]; // Add each price to the total
+          console.log(`Added item ${i + 1}: $${cartPrices[i]}`);
+        }
+        console.log(`Final Total: $${total}`);
+
+        //Example No. 2 i.e. Pro Way
+        const fruits = ["Apple", "Banana", "Orange"];
+
+        // Read this as: "For every fruit inside the fruits array..."
+        for (const fruit of fruits) {
+          console.log(`Dispatching: ${fruit}`);
+        }
+       */
+
+      /*   // Breaking out of Loop:
+      for (let i = 0; i <= 10; i++) {
+        console.log(i);
+        if (i == 5) break;
+      }
+ */
+      // Skipping a loop cycle:
+      for (let i = 0; i <= 10; i++) {
+        if (i == 5) continue;
         console.log(i);
       }
     </script>
